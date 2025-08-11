@@ -1,0 +1,43 @@
+/* =====================================
+   ANIMAÇÕES GERAIS
+   ===================================== */
+
+/* Fade In genérico */
+.fade-in{
+  animation: fadeIn .6s ease-out both;
+}
+@keyframes fadeIn{
+  from{ opacity: 0; transform: translateY(8px); }
+  to{ opacity: 1; transform: translateY(0); }
+}
+
+/* Brilho suave no título */
+.shimmer{
+  position: relative;
+  background: linear-gradient(90deg, #111, #ff4d8d, #111);
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent; 
+  animation: shimmerMove 2.2s linear infinite;
+}
+@keyframes shimmerMove{
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+/* Flutuar sutil */
+.float{ animation: float 3.2s ease-in-out infinite; }
+@keyframes float{
+  0%,100%{ transform: translateY(0); }
+  50%{ transform: translateY(-6px); }
+}
+
+.float-slow{ animation: float 5.2s ease-in-out infinite; }
+
+/* Revelar na rolagem (classe aplicada via JS) */
+.reveal{
+  opacity: 0; transform: translateY(12px);
+}
+.reveal.revealed{
+  opacity: 1; transform: translateY(0);
+  transition: opacity .6s ease, transform .6s ease;
+}
