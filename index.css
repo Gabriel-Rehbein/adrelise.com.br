@@ -1,8 +1,4 @@
-/* =========================================================
-   ESTILO PRINCIPAL - ADRELISE (k-pop pastel)
-   Paleta: Rosa bebê (#F8D9E6), Branco (#FFFFFF), Preto (#0F0F10)
-   Tipografia: Inter + Poppins vibe clean
-   ========================================================= */
+
 
 @font-face {
   font-family: "Inter";
@@ -153,22 +149,27 @@ img{ max-width: 100%; display: block; }
 }
 
 /* ===== Sections base ===== */
-.section{
+.section {
   padding: clamp(2.2rem, 5vw, 4rem) 1rem;
-  max-width: 1200px; margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: clamp(2rem, 4vw, 4rem);
+
 }
 
-.section-head{
+.section-head {
   margin-bottom: 1.2rem;
 }
 
-.section-head h2{
+.section-head h2 {
   font-size: clamp(1.6rem, 4vw, 2.2rem);
 }
 
-.section-head p{
-  opacity: .8; margin-top: .3rem;
+.section-head p {
+  opacity: .8;
+  margin-top: .3rem;
 }
+
 
 /* ===== Música ===== */
 .music-card{
