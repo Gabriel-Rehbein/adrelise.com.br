@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Adrelise • Oficial</title>
-  <meta name="description" content="Site oficial da cantora pop e influencer Adrelise. Músicas, clipes, fotos e agenda." />
+  <meta name="description"
+    content="Site oficial da cantora pop e influencer Adrelise. Músicas, clipes, fotos e agenda." />
+
 
   <!-- CSS principal da página -->
   <link rel="stylesheet" href="index.css" />
@@ -12,59 +15,78 @@
   <link rel="stylesheet" href="geralcss/animation.css" />
   <link rel="stylesheet" href="geralcss/responsive.css" />
 
-  <link rel="icon" href="img/capa-single.jpg" type="image/jpeg" />
+  <link rel="icon" href="Img/youtube-icon.png" type="image/jpeg" />
 </head>
+
 <body>
-  <!-- Header / Navbar -->
-  <header class="header">
-    <a href="#" class="logo">
-      <span class="logo-mark">A</span>
-      <span class="logo-text">Adrelise</span>
-    </a>
+<header class="header">
+  <div class="header__inner">
+    <a class="brand" href="#inicio">Adrelise</a>
 
     <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
-      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      <span class="hamb"></span>
+      <span class="txt">Menu</span>
     </button>
 
-    <nav class="nav" role="navigation">
+    <nav class="nav" id="site-nav">
       <ul>
-        <li><a href="#hero">Início</a></li>
+        <li><a href="#inicio">Início</a></li>
         <li><a href="#musica">Músicas</a></li>
-        <li><a href="#videos">Vídeos</a></li>
-        <li><a href="#galeria">Fotos</a></li>
+        <li><a href="#redes">Vídeos</a></li>
+        <li><a href="#galeria">Galeria</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <!-- Hero -->
-  <section id="hero" class="hero">
-    <div class="hero-content">
-      <h1 class="title shimmer">Adrelise</h1>
-      <p class="subtitle fade-in">
-        Cantora pop & influencer • <a href="https://instagram.com/adrelise_" target="_blank" rel="noopener">@adrelise_</a>
-      </p>
 
-      <div class="cta-group fade-in">
-        <a class="btn primary" href="#musica">Ouça agora</a>
-        <a class="btn ghost" href="#videos">Assista aos clipes</a>
-      </div>
+<!-- HERO -->
+<section class="hero container reveal" id="inicio" aria-labelledby="hero-title">
+  <div class="hero-content">
+    <h1 class="title" id="hero-title">
+      Adrelise <span class="title-accent"></span>
+    </h1>
+    <p class="subtitle">
+      Cantora e influencer. Me siga no
+      <a href="https://www.instagram.com/adrelise_" target="_blank" rel="noopener">Instagram</a>
+      e ouça no Spotify.
+    </p>
 
-      <div class="badge float">
-        <span>novo single</span>
-      </div>
+    <div class="cta-group">
+      <a class="btn primary" href="#musica">Ouvir Músicas</a>
+      <a class="btn ghost" href="#redes">Veja minhas Redes</a>
     </div>
 
-    <div class="hero-image float-slow">
-      <img src="img/adrelise-hero.jpg" alt="Foto oficial da Adrelise" loading="eager" />
+    <div class="badge float" style="margin-top:1rem">
+      <img src="img/spotify-icon.png" alt="" class="spotify-icon" aria-hidden="true">
+      <span>novo single</span>
+      <a href="https://open.spotify.com/intl-pt/track/5YExmMJs5NST5lZgVcgjxC" target="_blank" rel="noopener"
+         class="badge-link">PLAY</a>
     </div>
-  </section>
+
+    <!-- mini destaques (opcional) -->
+    <ul class="k-stats" aria-label="Marcos de carreira">
+      <li><strong>50k+</strong> streams</li>
+      <li><strong>?</strong> performances</li>
+      <li><strong>?</strong> videoclipes</li>
+    </ul>
+  </div>
+
+  <figure class="hero-image">
+    <img src="img/adrelise-hero.jpg" alt="Adrelise em ensaio fotográfico estilo k-pop">
+    <!-- shapes decorativos -->
+    <span class="shape s1" aria-hidden="true"></span>
+    <span class="shape s2" aria-hidden="true"></span>
+    <span class="shape s3" aria-hidden="true"></span>
+  </figure>
+</section>
+
 
   <!-- Músicas (Spotify Embed) -->
   <section id="musica" class="musica section">
     <div class="section-head">
       <h2>Minhas Músicas</h2>
-      <p>Ouça no Spotify e adicione à sua playlist.</p>
     </div>
 
     <div class="music-card">
@@ -73,7 +95,8 @@
         <h3>Mr Bunny</h3>
         <p>Descrição da Música????</p>
         <!-- Link do Spotify (substitua pelo link do single/álbum/perfil) -->
-        <a class="btn primary" href="https://open.spotify.com/intl-pt/track/3dSCIBTOgb9Ubi0veoLFTy" target="_blank" rel="noopener">Ouvir no Spotify</a>
+        <a class="btn primary" href="https://open.spotify.com/intl-pt/track/3dSCIBTOgb9Ubi0veoLFTy" target="_blank"
+          rel="noopener">Ouvir no Spotify</a>
       </div>
     </div>
 
@@ -83,19 +106,21 @@
         <h3>Agente 21</h3>
         <p>Descrição da Música????</p>
         <!-- Link do Spotify (substitua pelo link do single/álbum/perfil) -->
-        <a class="btn primary" href="https://open.spotify.com/intl-pt/track/2ilQdDwk0SaJNRL0AuJtFL" target="_blank" rel="noopener">Ouvir no Spotify</a>
+        <a class="btn primary" href="https://open.spotify.com/intl-pt/track/2ilQdDwk0SaJNRL0AuJtFL" target="_blank"
+          rel="noopener">Ouvir no Spotify</a>
+      </div>
+    </div>
+    <div class="music-card">
+      <img src="img/borboletas.jpg" alt="Capa do single da Adrelise" class="cover" />
+      <div class="music-info">
+        <h3>Mariposas e Borboletas</h3>
+        <p>Descrição da Música????</p>
+        <!-- Link do Spotify (substitua pelo link do single/álbum/perfil) -->
+        <a class="btn primary" href="https://open.spotify.com/intl-pt/track/4fdf0UrqTD7dliSN92WYBO" target="_blank"
+          rel="noopener">Ouvir no Spotify</a>
       </div>
     </div>
 
-    <div class="music-card">
-      <img src="img/cartaamorfeu.jpg" alt="Capa do single da Adrelise" class="cover" />
-      <div class="music-info">
-        <h3>Carta Morfeu</h3>
-        <p>Descrição da Música????</p>
-        <!-- Link do Spotify (substitua pelo link do single/álbum/perfil) -->
-        <a class="btn primary" href="https://open.spotify.com/intl-pt/track/7qHQwcBLdXMoiyYEJ0e2qg" target="_blank" rel="noopener">Ouvir no Spotify</a>
-      </div>
-    </div>
 
     <div class="music-card">
       <img src="img/pilulaazul.jpg" alt="Capa do single da Adrelise" class="cover" />
@@ -103,7 +128,8 @@
         <h3>Pilula Azul</h3>
         <p>Descrição da Música????</p>
         <!-- Link do Spotify (substitua pelo link do single/álbum/perfil) -->
-        <a class="btn primary" href="https://open.spotify.com/intl-pt/track/1MJnYihiGO2TYq3HNWzCKE" target="_blank" rel="noopener">Ouvir no Spotify</a>
+        <a class="btn primary" href="https://open.spotify.com/intl-pt/track/1MJnYihiGO2TYq3HNWzCKE" target="_blank"
+          rel="noopener">Ouvir no Spotify</a>
       </div>
     </div>
 
@@ -113,7 +139,8 @@
         <h3>Pilula Vermelha</h3>
         <p>Descrição da Música????</p>
         <!-- Link do Spotify (substitua pelo link do single/álbum/perfil) -->
-        <a class="btn primary" href="https://open.spotify.com/intl-pt/track/5BG17pl7OLAb2kMiaFPSFa" target="_blank" rel="noopener">Ouvir no Spotify</a>
+        <a class="btn primary" href="https://open.spotify.com/intl-pt/track/5BG17pl7OLAb2kMiaFPSFa" target="_blank"
+          rel="noopener">Ouvir no Spotify</a>
       </div>
     </div>
 
@@ -123,19 +150,22 @@
         <h3>Pausa para o Chá</h3>
         <p>Descrição da Música????</p>
         <!-- Link do Spotify (substitua pelo link do single/álbum/perfil) -->
-        <a class="btn primary" href="https://open.spotify.com/intl-pt/track/5BMaWSYKN3wg3SX6e0FaIb" target="_blank" rel="noopener">Ouvir no Spotify</a>
+        <a class="btn primary" href="https://open.spotify.com/intl-pt/track/5BMaWSYKN3wg3SX6e0FaIb" target="_blank"
+          rel="noopener">Ouvir no Spotify</a>
       </div>
     </div>
 
     <div class="music-card">
-      <img src="img/borboletas.jpg" alt="Capa do single da Adrelise" class="cover" />
+      <img src="img/cartaamorfeu.jpg" alt="Capa do single da Adrelise" class="cover" />
       <div class="music-info">
-        <h3>Mariposas e Borboletas</h3>
+        <h3>Carta Morfeu</h3>
         <p>Descrição da Música????</p>
         <!-- Link do Spotify (substitua pelo link do single/álbum/perfil) -->
-        <a class="btn primary" href="https://open.spotify.com/intl-pt/track/4fdf0UrqTD7dliSN92WYBO" target="_blank" rel="noopener">Ouvir no Spotify</a>
+        <a class="btn primary" href="https://open.spotify.com/intl-pt/track/7qHQwcBLdXMoiyYEJ0e2qg" target="_blank"
+          rel="noopener">Ouvir no Spotify</a>
       </div>
     </div>
+
 
     <!-- Player incorporado do Spotify (substitua o src pelo link do seu embed) -->
     <!--    
@@ -146,47 +176,97 @@
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
       </iframe>
     
-    --> 
+    -->
     </div>
   </section>
 
-  <!-- Vídeos -->
-  <section id="videos" class="videos section">
+  <!-- Redes -->
+  <section id="redes" class="redes section">
     <div class="section-head">
-      <h2>Vídeos</h2>
-      <p>Clipe oficial e bastidores.</p>
+      <h2>Minhas Redes</h2>
     </div>
 
-    <div class="video-grid">
-      <figure class="video-card">
-        <video id="videoOficial" class="video" controls poster="img/capa-single.jpg">
-          <source src="Videos/clipe-oficial.mp4" type="video/mp4" />
-          Seu navegador não suporta vídeo HTML5.
-        </video>
-        <figcaption>Clique para assistir ao clipe oficial</figcaption>
-      </figure>
+    <div class="redes-grid">
+      <!-- Instagram -->
+      <div class="canal-card">
+        <a href="https://www.instagram.com/adrelise_" target="_blank" aria-label="Acessar meu Instagram">
+          <img src="img/adrelise-hero.jpg" alt="Instagram Adrelise" class="canal-icon">
+        </a>
+        <figcaption>Instagram Oficial</figcaption>
+      </div>
 
-      <!-- Exemplo de vídeo externo (YouTube) -->
-      <div class="video-card">
-        <iframe class="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Adrelise - Live"
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen loading="lazy"></iframe>
-        <figcaption>Performance ao vivo</figcaption>
+      <!-- YouTube principal -->
+      <div class="canal-card">
+        <a href="https://www.youtube.com/@adrelise2208" target="_blank" aria-label="Acessar meu canal no YouTube">
+          <img src="img/youtube-icon.png" alt="Canal YouTube Adrelise" class="canal-icon">
+        </a>
+        <figcaption>Meu Canal no YouTube</figcaption>
+      </div>
+
+      <!-- YouTube Bunny Dancers -->
+      <div class="canal-card">
+        <a href="https://www.youtube.com/@adrelise2208" target="_blank" aria-label="Acessar canal dos Bunny Dancers">
+          <img src="img/bunnydancers.png" alt="Canal YouTube Bunny Dancers" class="canal-icon">
+        </a>
+        <figcaption>Canal dos Bunny Dancers</figcaption>
       </div>
     </div>
+    
   </section>
+
+<!-- Vídeos -->
+<section id="videos" class="videos section">
+  <div class="section-head">
+    <h2>Vídeos</h2>
+    <p class="section-sub">Performances e clipes oficiais</p>
+  </div>
+
+  <div class="videos-grid">
+    <!-- Vídeo 1 -->
+    <div class="video-card">
+      <iframe class="video" src="https://www.youtube.com/embed/qpAJEnEiDx8" 
+        title="Adrelise - Live" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen loading="lazy">
+      </iframe>
+      <figcaption>Adrelise - Mr Bunny</figcaption>
+    </div>
+
+    
+    <!-- Vídeo 2 -->
+    <div class="video-card">
+      <iframe class="video" src="https://www.youtube.com/watch?v=R4yP0Tf6Dp8" 
+        title="Adrelise - Clipe Oficial" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen loading="lazy">
+      </iframe>
+      <figcaption>Adrelise - Carta Morfeu</figcaption>
+    </div>
+
+    <!-- Vídeo 3 -->
+    <div class="video-card">
+      <video class="video" controls poster="img/capa-video.jpg">
+        <source src="Videos/adrelise-video.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+      <figcaption>Adrelise - Video Aleátorio</figcaption>
+    </div>
+  </div>
+</section>
+
+
 
   <!-- Galeria -->
   <section id="galeria" class="galeria section">
     <div class="section-head">
-      <h2>Galeria</h2>
-      <p>Estética pastel, clean e moderna.</p>
+      <h2>Galeria de Fotos</h2>
+      <p>Por isso preciso das fotos Lise!!</p>
     </div>
 
     <div class="grid">
-      <img src="img/galeria-01.jpg" alt="Adrelise em estúdio" class="gallery-item reveal" />
-      <img src="img/galeria-02.jpg" alt="Adrelise em sessão de fotos" class="gallery-item reveal" />
-      <img src="img/galeria-03.jpg" alt="Adrelise no palco" class="gallery-item reveal" />
+      <img src="img/adrelise-hero.jpg" alt="Adrelise em estúdio" class="gallery-item reveal" />
+      <img src="img/adrelise-hero.jpg" alt="Adrelise em sessão de fotos" class="gallery-item reveal" />
+      <img src="img/adrelise-hero.jpg" alt="Adrelise no palco" class="gallery-item reveal" />
     </div>
   </section>
 
@@ -196,8 +276,9 @@
       <h2>Contato</h2>
       <p>Shows, parcerias e press:</p>
       <ul class="contacts">
-        <li><strong>Instagram:</strong> <a href="https://instagram.com/adrelise_" target="_blank" rel="noopener">@adrelise_</a></li>
-        <li><strong>E-mail:</strong> adrelisepcosta@gmail.com</li>
+        <li><strong>Instagram:</strong> <a href="https://instagram.com/adrelise_" target="_blank"
+            rel="noopener">@adrelise_</a></li>
+        <li><strong>E-mail:</strong> manager.adrelise@gmail.com</li>
       </ul>
     </div>
   </section>
@@ -209,4 +290,5 @@
   <!-- JS -->
   <script src="script.js"></script>
 </body>
+
 </html>

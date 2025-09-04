@@ -41,3 +41,38 @@
   opacity: 1; transform: translateY(0);
   transition: opacity .6s ease, transform .6s ease;
 }
+
+/* =========================================================
+   ANIMAÇÕES – ADRELISE
+   ========================================================= */
+
+/* leve flutuação em badges/ícones */
+@keyframes floatUp {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+}
+.badge.float { animation: floatUp 3.6s ease-in-out infinite; }
+
+/* brilho suave no hover de cards */
+@keyframes glow {
+  from { box-shadow: 0 0 0 rgba(255, 192, 203, 0); }
+  to   { box-shadow: 0 12px 36px rgba(255, 192, 203, .45); }
+}
+.canal-card:hover { animation: glow .35s ease forwards; }
+
+/* entrada suave de seções */
+.reveal {
+  opacity: 0; transform: translateY(14px);
+  animation: revealIn .6s ease forwards;
+}
+@keyframes revealIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* já existia floatUp; só garantindo timing suave pro hero */
+@keyframes floatUp {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
